@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./form.css">
+</head>
+<body>
+    <div class="content">
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Kindly take time to help us improve our service to you</p>
+    <div class="Container">
+        <form id="survey-form">
+        <label for="name" id="name-label">Name</label>
+            <input type="text" name="name" id="name" class="input" placeholder="Thomas Thompson">
+        <label for="email address" id="email-label">Email</label>
+            <input type="email" name="email address" id="email" class="input" placeholder="Example@gmail.com">
+        <label for="site" id="site-label">Location</label>
+            <input type="text" name="Site" id="site" class="input" placeholder="ABK Nig. Plc">
+        <label for="noOfbranch" id="number-label">No. of Branch Serviced</label>
+            <input type="number" name="noOfbranch" id="number" class="input" min="1" max="10" placeholder="1,2,3....">
+        <label for="role">Which option best describe you current role?</label>
+            <select name="role" class="dropdown input">
+                <option value="0">Select role here</option>
+                <option value="1">Organization Chairman / Board</option>
+                <option value="2">Managing Director</option>
+                <option value="3">General Manager</option>
+                <option value="4">Admin Staff</option>
+            </select>
+            <label for="Services">What service do we offer you?</label>
+            <select name="Services" class="dropdown input">
+                <option value="0">Select an option</option>
+                <option value="1">Janitorial Office Cleaning</option>
+                <option value="2">Janitorial Home Cleaning</option>
+                <option value="3">House Keeping</option>
+                <option value="4">One-off Cleaning</option>
+                <option value="5">Pest Control & Fumigation</option>
+                <option value="6">post Construction / Renovation</option>
+                <option value="7">High-Rise Cleaning</option>
+                <option value="8">Aircraft / hangar Cleaning</option>
+            </select>
+        <div class="name">
+        <label for="Recommendation">Would you recommend us to friends and associates?</label> <br>
+            <input type="radio" name="yes" id="yes" class="clicks">
+            <label for="yes">Definitely</label> <br>
+            <input type="radio" name="possibly" id="possibly" class="clicks">
+            <label for="possibly">Maybe</label> <br>
+            <input type="radio" name="probably" id="probably" class="clicks">
+            <label for="probably">Not sure</label> <br>
+            <input type="radio" name="No" id="No" class="clicks">
+            <label for="No">Certainly Not</label> <br>
+        </div>
+        <div class="value">
+        <label for="improve">Where would you like us to improve? <span id="instruction">(Click all that apply)</span></label> <br>
+            <input type="checkbox" name="Training" id="Training" class="clicks">
+            <label for="Training">Training</label> <br>
+            <input type="checkbox" name="Supervision" id="Supervision" class="clicks">
+            <label for="Supervision">Supervision</label> <br>
+            <input type="checkbox" name="Supplies" id="Supplies" class="clicks">
+            <label for="Supplies">Supplies</label> <br>
+            <input type="checkbox" name="Billing" id="Billing" class="clicks">
+            <label for="Billing">Billing</label> <br>
+            <input type="checkbox" name="dressing" id="dressing" class="clicks">
+            <label for="dressing">Staff Wears</label> <br>
+            <label for="Others">Others Specify</label> <br>
+            <textarea name="Others" class="notes" cols="30" rows="10" placeholder="Enter your comment here...."></textarea>
+        </div>
+        <label for="suggestions">Any Comments or suggestions?</label>
+            <textarea name="suggestions" class="notes" cols="30" rows="10" placeholder="Enter your comment here...."></textarea>
+            <button id="submit">Submit</button>
+        </form>
+    </div>
+    </div>
+</body>
+</html>
